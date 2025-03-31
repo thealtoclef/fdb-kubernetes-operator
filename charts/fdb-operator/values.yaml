@@ -3,22 +3,7 @@ image:
   repository: foundationdb/fdb-kubernetes-operator
   tag: v2.2.0
   pullPolicy: IfNotPresent
-initContainers:
-  6.2:
-    image:
-      repository: foundationdb/foundationdb-kubernetes-sidecar
-      tag: 6.2.30-1
-      pullPolicy: IfNotPresent
-  6.3:
-    image:
-      repository: foundationdb/foundationdb-kubernetes-sidecar
-      tag: 6.3.23-1
-      pullPolicy: IfNotPresent
-  7.1:
-    image:
-      repository: foundationdb/foundationdb-kubernetes-sidecar
-      tag: 7.1.15-1
-      pullPolicy: IfNotPresent
+initContainers: {}
 globalMode:
   enabled: false
 replicas: null
